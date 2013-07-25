@@ -5,20 +5,30 @@ using RSAHelper.Tests;
 namespace RSAHelper.Tests
 {
     [TestFixture]
-    public class NUnitTests
+    public class RSAKeyTests
     {
         [Test]
-        public void RSAKey_InitializesOK()
+        public void ShouldInitialize_GivenNoPublicKey()
         {
             var key = new RSAKey();
-            
+
             Assert.IsInstanceOf<RSAKey>(key);
             Assert.IsNotNullOrEmpty(key.PrivateKeyXML);
             Assert.IsNotNullOrEmpty(key.PublicKeyXML);
         }
 
         [Test]
-        public void RSAKey_SameKeyEncryptionWorks()
+        public void ShouldInitialize_GivenPublicKey()
+        {
+            var key1 = new RSAKey();
+            var key2 = new RSAKey(publicKeyXML: key1.PublicKeyXML);
+
+            Assert.IsInstanceOf<RSAKey>(key2);            
+            Assert.IsNotNullOrEmpty(key2.PublicKeyXML);
+        }
+
+        [Test]
+        public void ShouldEncryptAndDecrypt_UsingSameKey()
         {
             var key = new RSAKey();
             string message = "hello world!";
@@ -30,7 +40,7 @@ namespace RSAHelper.Tests
         }
 
         [Test]
-        public void RSAKey_DifferentKeyEncryptionWorks()
+        public void ShouldEncryptAndDecrypt_UsingDerivedPublicKey()
         {
             var originalKey = new RSAKey();
             var publicKey = new RSAKey(publicKeyXML: originalKey.PublicKeyXML);
