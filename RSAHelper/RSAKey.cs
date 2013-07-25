@@ -9,7 +9,7 @@ namespace RSAHelper
 {
     public class RSAKey
     {
-        private const bool USE_OAEP_PADDING = false;
+        private const bool USE_OAEP_PADDING = true;
 
         private Encoding encoding = Encoding.UTF8;
         private RSACryptoServiceProvider privateRSACryptoServiceProvider;
