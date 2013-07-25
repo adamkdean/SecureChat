@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace SecureChat
 {
-    public partial class frmTest : Form
+    public partial class frmSingleKeyTest : Form
     {
         private RSACryptoServiceProvider rsaPrivate, rsaPublic;
         private string rsaPrivateXml, rsaPublicXml;
 
-        public frmTest()
+        public frmSingleKeyTest()
         {
             InitializeComponent();
         }

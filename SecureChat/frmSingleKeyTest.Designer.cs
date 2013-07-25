@@ -1,6 +1,6 @@
 ﻿namespace SecureChat
 {
-    partial class frmTest
+    partial class frmSingleKeyTest
     {
         /// <summary>
         /// Required designer variable.
@@ -122,7 +122,7 @@
             this.Controls.Add(this.btnEncrypt);
             this.Controls.Add(this.txtEncrypt);
             this.Name = "frmTest";
-            this.Text = "SecureChat";
+            this.Text = "Single Key Test";
             this.ResumeLayout(false);
             this.PerformLayout();
 
