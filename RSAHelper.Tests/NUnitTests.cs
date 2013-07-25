@@ -7,11 +7,9 @@ namespace RSAHelper.Tests
     public class NUnitTests
     {
         [Test]
-        public void TestMethod1()
+        public void TestMethod()
         {
-            bool isWorking = true;
-            
-            Assert.IsTrue(isWorking);
+            Assert.IsTrue(true);
         }
     }
 }

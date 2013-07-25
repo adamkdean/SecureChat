@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureChat", "SecureChat.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAHelper", "..\RSAHelper\RSAHelper.csproj", "{84F3C5BD-7FF1-4E3E-9368-CBE5CAE1BF79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAHelper.Tests", "RSAHelper.Tests\RSAHelper.Tests.csproj", "{DF8ABDA0-1A9C-4CE4-AFE4-F42B52C3D4F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAHelper.Tests", "..\RSAHelper.Tests\RSAHelper.Tests.csproj", "{319BC198-2370-4826-B8C6-DF776F532A93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		{84F3C5BD-7FF1-4E3E-9368-CBE5CAE1BF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84F3C5BD-7FF1-4E3E-9368-CBE5CAE1BF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84F3C5BD-7FF1-4E3E-9368-CBE5CAE1BF79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF8ABDA0-1A9C-4CE4-AFE4-F42B52C3D4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF8ABDA0-1A9C-4CE4-AFE4-F42B52C3D4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF8ABDA0-1A9C-4CE4-AFE4-F42B52C3D4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF8ABDA0-1A9C-4CE4-AFE4-F42B52C3D4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319BC198-2370-4826-B8C6-DF776F532A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319BC198-2370-4826-B8C6-DF776F532A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319BC198-2370-4826-B8C6-DF776F532A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319BC198-2370-4826-B8C6-DF776F532A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
