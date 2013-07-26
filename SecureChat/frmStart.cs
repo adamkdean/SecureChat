@@ -16,5 +16,20 @@ namespace SecureChat
         {
             InitializeComponent();
         }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void btnListen_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
