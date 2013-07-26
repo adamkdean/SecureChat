@@ -16,7 +16,7 @@ namespace SecureChat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSingleKeyTest());
+            Application.Run(new frmStart());
         }
     }
 }

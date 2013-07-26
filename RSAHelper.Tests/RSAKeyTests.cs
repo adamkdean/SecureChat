@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using NUnit.Framework;
 using RSAHelper.Tests;
 
@@ -51,5 +52,34 @@ namespace RSAHelper.Tests
 
             Assert.AreEqual(message, decrypted);
         }
+
+        [Test]
+        public void ShouldSignAndVerify_UsingSameKey()
+        {
+            var key = new RSAKey();
+            string message = "hello world!";
+
+            string encrypted = key.Encrypt(message);
+            string decrypted = key.Decrypt(encrypted);
+            string signed = key.Sign(encrypted);
+            bool verified = key.Verify(encrypted, signed);
+
+            Assert.IsTrue(verified);
+        }
+
+        [Test]
+        public void ShouldSignAndVerify_UsingDerivedPublicKey()
+        {
+            var originalKey = new RSAKey();
+            var publicKey = new RSAKey(publicKeyXML: originalKey.PublicKeyXML);
+            string message = "hello world!";
+
+            string encrypted = publicKey.Encrypt(message);
+            string decrypted = originalKey.Decrypt(encrypted);
+            string signed = originalKey.Sign(encrypted);
+            bool verified = publicKey.Verify(encrypted, signed);
+
+            Assert.IsTrue(verified);
+        }        
     }
 }
